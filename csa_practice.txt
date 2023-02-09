@@ -1,0 +1,54 @@
+to create a folder through command prompt in windows or through gitbash use
+* mkdir folder name (i.e mkdir followed by the folder name) as seen in csa_workshop folder where I created frontend and backend folders.
+
+to create a file through windows command prompt
+*type nul > filename.txt (e.g type nul > csa_practice.txt for a txt file)
+
+to create a file through git bash use 
+* touch file name (e.g touch app.js (for javascript file), touch env.py (for python file)
+
+to access a folder use 
+*cd folder name (e.g cd csa_workshop)
+
+to access desktop use
+*cd desktop
+
+after that to access your directories, type dir
+C:\Users\RONKE\Desktop>dir (will return everything present in desktop)
+
+type cls to clear windows prompt interface
+type clear to clear gitbash interface
+type ls in gitbash to show directory content
+type cd .. to go back to previous folder. e.g go from RONKE@Ronke MINGW64 ~/desktop/csa_workshop/backend
+to
+RONKE@Ronke MINGW64 ~/desktop/csa_workshop  in gitbash
+type pwd to see the name of the folder you are working in.
+type ls -a to view all hidden component within a folder.
+
+
+***from git to github***
+* go to your github account and select new to create a new repository
+* enter repository name
+* enter repository description in the description box (this is optional)
+* choose if you want your repo to be public or private
+* add readme file if necessary
+* select git ignore if necessary
+* select create repository.
+after creating a repo, go to git bash and
+* initialize a git by typing git init
+* add your file using git add filename/folder name if you are adding a folder( e.g git add backend). note that you can't add an empty folder to git
+* typing git status will show the current happenings within a folder in github
+* to remove a file/folder in git type
+git rm --cached file/foldername -r (e.g git rm --cached backend -r)
+* to add all the components in a folder to git use
+git add . (i.e git add with full stop) let there be space between.
+
+next is to commit
+*type git commit -m "description: loggin page completed"
+*copy remote add origin url for the repo from github and paste in the git bash command then press enter.
+*type git remote -v to view the origin url that has been added (same url as above with fetch and push)
+*type git push to move your commit from your local/remote origin to the online page.
+but as a first attempt type in 
+git push --set-upstream origin master
+then you can use just git push for subsequent commit
+
